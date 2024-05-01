@@ -71,7 +71,7 @@ function buildLogger (labelSuffix?: string) {
       format.splat()
     ),
     transports: [
-      new transports.File(fileLoggerOptions),
+//      new transports.File(fileLoggerOptions),
       new transports.Console({
         handleExceptions: true,
         format: format.combine(

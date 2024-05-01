@@ -349,7 +349,7 @@ async function startApplication () {
   if (CONFIG.LIVE.ENABLED) await LiveManager.Instance.run()
 
   // Make server listening
-  server.listen(port, hostname, async () => {
+  server.listen(hostname, async () => {
     if (cliOptions.plugins) {
       try {
         await PluginManager.Instance.rebuildNativePluginsIfNeeded()
